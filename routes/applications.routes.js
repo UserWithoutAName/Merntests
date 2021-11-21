@@ -2,6 +2,7 @@
 
 const express = require('express');
 const router = express.Router();
+const auth = require('../middleware/auth')
 
 // Load Application Functions
 const {testApplications, 
@@ -24,7 +25,7 @@ router.get('/test', testApplications)
  * @description Get all applications
  * @access public
  */
-router.get('/', getApplications)
+router.get('/', auth, getApplications)
 
 /**
  * @route GET api/applications

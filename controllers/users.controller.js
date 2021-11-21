@@ -63,7 +63,6 @@ exports.userRegister = async (req, res) => {
 exports.userLogin = async (req, res) => {
     
     try {
-
         const {email, password} = req.body;
 
         if (!(email && password)) {
@@ -89,6 +88,8 @@ exports.userLogin = async (req, res) => {
             res.status(200).send(user);
         } 
     } catch (err) {
+
         console.log(err);
+        
     }
 }
