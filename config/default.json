@@ -1,4 +1,6 @@
 {
     "mongoURI":
-        "mongodb+srv://lucasleguilloux:xuu60544@mernstart.nywfq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+        "mongodb+srv://lucasleguilloux:xuu60544@mernstart.nywfq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtPassPhrase":
+        "48er6g7e84b8r9b!fezef--ezf5ze4fzef4z6e5f1-!mpomoilbrtbbetrg"
 }

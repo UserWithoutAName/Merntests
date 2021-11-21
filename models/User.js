@@ -4,21 +4,32 @@ const UsersSchema = new mongoose.Schema(
     {
         username: {
             type: String,
-            required: true
+            required: true,
+            unique: true,
         },
         email: {
             type: String,
-            required: true
+            required: true,
+            unique: true,
         },
         password: {
             type: String,
             required: true
         },
+        token: {
+            type: String,
+            required: false
+        },
+        roles: [
+            {
+                type: mongoose.Schema.Types.ObjectId,
+                ref: 'Role'
+            }
+        ]
     }, {
         timestamps: true,
         collection: 'users'
     }
 );
 
-module.exports = User = mongoose.model('user', UsersSchema);
-
+module.exports = User = mongoose.model('User', UsersSchema);

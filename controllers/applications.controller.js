@@ -1,7 +1,7 @@
 // controllers/applications.controller.js
 
 // Load Application Model
-const Application = require('../models/Application')
+const Application = require('../models/Application');
 
 exports.testApplications = (req, res) => res.send('Application route testing !');
 

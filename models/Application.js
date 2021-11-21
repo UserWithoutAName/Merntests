@@ -20,4 +20,4 @@ const ApplicationSchema = new mongoose.Schema({
   collection: 'applications'
 });
 
-module.exports = Application = mongoose.model('application', ApplicationSchema);
+module.exports = Application = mongoose.model('Application', ApplicationSchema);
